@@ -13,15 +13,15 @@ content:
       - { name: description, type: string, options: { maxlength: 160 } }
       - { name: featured_image, label: Image, type: image }
       - { name: body, label: Body, type: rich-text }
-content:
-  - name: pages
-    label: Pages
-    type: collection
-    path: _pages
-    view:
-      fields: [ title, date ]
-    fields:
-      - { name: title, label: Title, type: string }
-      - { name: subtitle, label: Subtitle, type: string, options: { maxlength: 100 } }
-      - { name: description, type: string, options: { maxlength: 160 } }
-      - { name: featured_image, label: Image, type: image }
+# content:
+#   - name: pages
+#     label: Pages
+#     type: collection
+#     path: _pages
+#     view:
+#       fields: [ title, date ]
+#     fields:
+#       - { name: title, label: Title, type: string }
+#       - { name: subtitle, label: Subtitle, type: string, options: { maxlength: 100 } }
+#       - { name: description, type: string, options: { maxlength: 160 } }
+#       - { name: featured_image, label: Image, type: image }
