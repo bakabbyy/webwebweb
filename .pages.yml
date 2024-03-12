@@ -13,6 +13,19 @@ content:
       - { name: description, type: string, options: { maxlength: 160 } }
       - { name: featured_image, label: Image, type: image }
       - { name: body, label: Body, type: rich-text }
+  - name: projects
+    label: Projects
+    type: collection
+    path: _projects
+    view:
+      fields: [ title, date ]
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: layout, type: string, hidden: true, default: post }
+      - { name: date, label: Date, type: date }
+      - { name: description, type: string, options: { maxlength: 160 } }
+      - { name: featured_image, label: Image, type: image }
+      - { name: body, label: Body, type: rich-text }
   - name: pages
     label: Pages
     type: collection
