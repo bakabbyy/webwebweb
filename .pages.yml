@@ -1,7 +1,7 @@
 media: images
 content:
   - name: posts
-    label: Posts
+    label: Blog
     type: collection
     path: _posts
     view:
